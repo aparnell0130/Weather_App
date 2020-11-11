@@ -15,14 +15,17 @@
     <div class="bg-dark" aria-label="header">
         <h1 class="display-4 text-white text-center">Weather Dashboard</h1>
     </div>
-    <div class="container col-12 d-flex">
-        <div class="card col-3">
+    <div class="container col-12  d-flex">
+        <div class="card p-2 mainCard ">
             <div class="input-group mb-3">
                 <h4>Search for a City:</h4>
-                <input type="text" class="form mr-2" placeholder="Enter City" aria-label="Recipient's username"
-                    aria-describedby="basic-addon2">
-                <div class="input">
-                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i> Search</button>
+                <div id="inputBtn" class="d-flex">
+                    <input id="citySearch" type="text" class="form mr-2" placeholder="Enter City"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+                    <button id="searchBtn" class="btn btn-primary" type="button"><i class="fa fa-search"></i>
+                        Search</button>
+
                 </div>
             </div>
             <ul class="list-group list-group-flush">
@@ -31,60 +34,65 @@
                 <li class="list-group-item">Vestibulum at eros</li>
             </ul>
         </div>
-        <div class="main col-9">
+        <div class="main">
             <div id="currentWeather" class="border rounded mb-3">
-                <h3 id="city">placeholder</h3>
-                <p id="mainTemp">placeholder</p>
-                <p id="windSpeed">placeholder</p>
-                <p id="uvIndex">placeholder</p>
+                <h3 id="city"></h3>
+                <p id="mainTemp"></p>
+                <p id="windSpeed"></p>
+                <p id="uvIndex"></p>
             </div>
             <div id="weatherList" class="flex-column">
                 <h2>5-Day Forecast:</h2>
                 <div id="weatherCards" class="d-flex justify-content-between">
-                    <div id="day-1" class="card cardWidth mr-5 bg-primary text-white">
+                    <div id="day-1" class="card cardWidth mr-2 bg-primary text-white">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="card-text">temp</p>
-                            <p>humidity</p>
+                            <h5 class="date card-title">Card title</h5>
+                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
+                            <p class="temp card-text">temp</p>
+                            <p class="humidity">humidity</p>
                         </div>
                     </div>
-                    <div id="day-2" class="card cardWidth mr-5 bg-primary text-white">
+                    <div id="day-2" class="card cardWidth mr-2 bg-primary text-white">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="card-text">temp</p>
-                            <p>humidity</p>
+                            <h5 class="date card-title">Card title</h5>
+                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
+                            <p class="temp card-text">temp</p>
+                            <p class="humidity">humidity</p>
                         </div>
                     </div>
-                    <div id="day-3" class="card cardWidth mr-5 bg-primary text-white">
+                    <div id="day-3" class="card cardWidth mr-2 bg-primary text-white">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="card-text">temp</p>
-                            <p>humidity</p>
+                            <h5 class="date card-title">Card title</h5>
+                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
+                            <p class="temp card-text">temp</p>
+                            <p class="humidity">humidity</p>
                         </div>
                     </div>
-                    <div id="day-4" class="card cardWidth mr-5 bg-primary text-white">
+                    <div id="day-4" class="card cardWidth mr-2 bg-primary text-white">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="card-text">temp</p>
-                            <p>humidity</p>
+                            <h5 class="date card-title">Card title</h5>
+                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
+                            <p class="temp card-text">temp</p>
+                            <p class="humidity">humidity</p>
                         </div>
                     </div>
                     <div id="day-5" class="card cardWidth bg-primary text-white">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="card-text">temp</p>
-                            <p>humidity</p>
+                            <h5 class="date card-title">Card title</h5>
+                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
+                            <p class="temp card-text">temp</p>
+                            <p class="humidity">humidity</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,35 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.mainCard{
+    width: 20%;
+    margin-right: 5px;
+}
+
 .cardWidth {
     width: 20%;
 }
 
+#currentWeather{
+    padding: 10px;
+}
+.citySearch{
+    width: 80%;
+}
+
+@media screen and (max-width: 926px) {
+    .inputBtn {
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container, #weatherCards, .cardWidth, .mainCard {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+
+    
+}
