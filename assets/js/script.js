@@ -21,7 +21,12 @@ $('#searchBtn').click(function (event) {
             var uvi = response2.current.uvi
             var uvSpan = $('<span>').text(uvi)
             uvSpan.css({ 'width': '30px', 'padding': '2px', 'border-radius': '5px', 'color': 'white' })
-            $('#city').text(response.name + ' ' + dateString + ' ' + response2.current.weather[0].icon)
+            var iconCode = response2.current.weather[0].icon
+            var iconUrl = 'http://openweathermap.org/img/wn/' + iconCode + '.png';
+            var iconImg = $('<img>')
+            iconImg.attr('src', iconUrl)
+            var city = $('#city').text(response.name + ' ' + dateString)
+            city.append(iconImg)
             $('#mainTemp').text('Temperature: ' + temp)
             $('#windSpeed').text('Wind Speed: ' + response2.current.wind_speed)
             var uviIndex = $('#uvIndex').text('UV Index: ')
@@ -44,6 +49,17 @@ $('#searchBtn').click(function (event) {
                     uvSpan.css({ 'backgroundColor': 'green' })
                 }
             }
+            var forecast = response2.daily
+
+            for (var i = 0; i < 5; i++) {
+                var forecastDay = forecast[i].dt;
+                var forecastIcon = forecast[i].weather[0].icon;
+                var forecastTemp = forecast[i].temp.max;
+                var forecastHumidity = forecast[i].humidity;
+                console.log(forecastDay, forecastIcon, forecastTemp, forecastHumidity)
+
+            }
         })
+
     });
 })

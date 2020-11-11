@@ -9,6 +9,7 @@ h1{
 
 .cardWidth {
     width: 20%;
+    text-align: center;
 }
 
 #currentWeather{
@@ -28,6 +29,7 @@ h1{
     .container, #weatherCards, .cardWidth, .mainCard {
       display: flex;
       flex-direction: column;
+      margin-bottom: 10px;
       width: 100%;
     }
 
