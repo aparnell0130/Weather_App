@@ -12,6 +12,10 @@ h1{
     text-align: center;
 }
 
+.main{
+    width: 80%;
+}
+
 #currentWeather{
     padding: 10px;
 }
@@ -26,7 +30,7 @@ h1{
     }
 }
 @media screen and (max-width: 768px) {
-    .container, #weatherCards, .cardWidth, .mainCard {
+    .container, #weatherCards, .cardWidth, .mainCard, .main {
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;

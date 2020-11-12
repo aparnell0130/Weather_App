@@ -18,74 +18,32 @@
     <div class="container col-12  d-flex">
         <div class="card p-2 mainCard ">
             <div class="input-group mb-3">
-                <h4>Search for a City:</h4>
+                <h4 class="mr-2">Search for a City:</h4>
                 <div id="inputBtn" class="d-flex">
                     <input id="citySearch" type="text" class="form mr-2" placeholder="Enter City"
                         aria-label="Recipient's username" aria-describedby="basic-addon2">
 
-                    <button id="searchBtn" class="btn btn-primary" type="button"><i class="fa fa-search"></i>
+                    <button id="searchBtn" class="btn btn-primary" type="submit"><i class="fa fa-search"></i>
                         Search
                     </button>
 
                 </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+            <ul id="cityList" class="list-group list-group-flush">
+
             </ul>
         </div>
         <div class="main">
-            <div id="currentWeather" class="border rounded mb-3">
+            <div id="currentWeather" class="">
                 <h3 id="city"></h3>
                 <p id="mainTemp"></p>
-                <p id="mainHumidty"></p>
+                <p id="mainHumidity"></p>
                 <p id="windSpeed"></p>
                 <p id="uvIndex"></p>
             </div>
             <div id="weatherList" class="flex-column">
-                <h2>5-Day Forecast:</h2>
+                <h2 id="5day"></h2>
                 <div id="weatherCards" class="d-flex justify-content-between">
-                    <div id="day-1" class="card cardWidth mr-2 bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="date card-title">Card title</h5>
-                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="temp card-text">temp</p>
-                            <p class="humidity">humidity</p>
-                        </div>
-                    </div>
-                    <div id="day-2" class="card cardWidth mr-2 bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="date card-title">Card title</h5>
-                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="temp card-text">temp</p>
-                            <p class="humidity">humidity</p>
-                        </div>
-                    </div>
-                    <div id="day-3" class="card cardWidth mr-2 bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="date card-title">Card title</h5>
-                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="temp card-text">temp</p>
-                            <p class="humidity">humidity</p>
-                        </div>
-                    </div>
-                    <div id="day-4" class="card cardWidth mr-2 bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="date card-title">Card title</h5>
-                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="temp card-text">temp</p>
-                            <p class="humidity">humidity</p>
-                        </div>
-                    </div>
-                    <div id="day-5" class="card cardWidth bg-primary text-white">
-                        <div class="card-body">
-                            <h5 class="date card-title">Card title</h5>
-                            <h6 class="icon card-subtitle m-2 ">Card subtitle</h6>
-                            <p class="temp card-text">temp</p>
-                            <p class="humidity">humidity</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
