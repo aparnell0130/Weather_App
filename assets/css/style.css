@@ -22,7 +22,10 @@ h1{
 .citySearch{
     width: 80%;
 }
-
+.li-hover:hover{
+    cursor: pointer;
+    background-color: lightslategray ;
+}
 @media screen and (max-width: 926px) {
     .inputBtn {
       display: flex;
