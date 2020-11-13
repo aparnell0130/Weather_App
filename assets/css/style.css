@@ -1,44 +1,40 @@
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/* width and padding for search area and list */
 .mainCard{
     width: 20%;
     margin-right: 5px;
 }
-
+/* width for weather area */
+.main{
+    width: 80%;
+}
+/* width and text alignment for 5 day forecast cards */
 .cardWidth {
     width: 20%;
     text-align: center;
 }
-
-.main{
-    width: 80%;
-}
-
-/* #currentWeather{
-    padding: 10px;
-} */
+/* width for search bar */
 #citySearch{
     width: 80%;
 }
+/* width for search button */
 #searchBtn{
     width: 20%;
 }
+/* hover styling for city list */
 .li-hover:hover{
     cursor: pointer;
     background-color: lightslategray ;
 }
     
-
+/* make everything column and fit screen width */
 @media screen and (max-width: 768px) {
     .container, #weatherCards, .cardWidth, .mainCard, .main {
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
       width: 100%;
-    }
-
-
-    
+    }  
 }
