@@ -16,22 +16,21 @@ h1{
     width: 80%;
 }
 
-#currentWeather{
+/* #currentWeather{
     padding: 10px;
-}
-.citySearch{
+} */
+#citySearch{
     width: 80%;
+}
+#searchBtn{
+    width: 20%;
 }
 .li-hover:hover{
     cursor: pointer;
     background-color: lightslategray ;
 }
-@media screen and (max-width: 926px) {
-    .inputBtn {
-      display: flex;
-      flex-direction: column;
-    }
-}
+    
+
 @media screen and (max-width: 768px) {
     .container, #weatherCards, .cardWidth, .mainCard, .main {
       display: flex;

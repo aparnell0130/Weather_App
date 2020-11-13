@@ -84,7 +84,7 @@ function setCity() {
             var iconImg = $('<img>')
             iconImg.attr('src', iconUrl)
             // create city heading content
-            var city = $('#city').text(response.name + ' ' + dateString).addClass('card-header').css('backgroundColor', 'rgb(175, 175, 175)')
+            var city = $('#city').text(response.name + ' ' + dateString).addClass('card-header').css('backgroundColor', 'lightslategray')
             city.append(iconImg)
             // set temp, humidity and wind speed 
             $('#mainTemp').text('Temperature: ' + temp + ' °F')
