@@ -80,7 +80,7 @@ function setCity() {
             var temp = ((response2.current.temp - 273.15) * 9 / 5 + 32).toFixed(0)
             // create icon
             var iconCode = response2.current.weather[0].icon
-            var iconUrl = 'http://openweathermap.org/img/wn/' + iconCode + '.png';
+            var iconUrl = 'http://openweathermap.org/img/w/' + iconCode + '.png';
             var iconImg = $('<img>')
             iconImg.attr('src', iconUrl)
             // create city heading content
@@ -143,7 +143,7 @@ function setCity() {
             // set content for five day forecast cards
             cardHumid.text('Humidity: ' + forecastHumidity + '%')
             cardTemp.text('Temp: ' + ((forecastTemp - 273.15) * 9 / 5 + 32).toFixed(0) + ' °F')
-            cardImg.attr('src', 'http://openweathermap.org/img/wn/' + forecastIcon + '.png')
+            cardImg.attr('src', 'http://openweathermap.org/img/w/' + forecastIcon + '.png')
             cardH5.text(moment(forecastDay * 1000).format('M/DD/YYYY'))
             // append five day forecast cards
             $(weatherCards).append(cardEl)
